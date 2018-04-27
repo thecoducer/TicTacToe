@@ -168,4 +168,7 @@
         Application.Restart()
     End Sub
 
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        MsgBox("About Me")
+    End Sub
 End Class

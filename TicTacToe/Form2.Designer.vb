@@ -22,6 +22,7 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -39,6 +40,7 @@ Partial Class Form2
         Me.restart = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -190,7 +192,7 @@ Partial Class Form2
         'score_x
         '
         Me.score_x.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.score_x.Location = New System.Drawing.Point(540, 103)
+        Me.score_x.Location = New System.Drawing.Point(540, 120)
         Me.score_x.Name = "score_x"
         Me.score_x.Size = New System.Drawing.Size(52, 32)
         Me.score_x.TabIndex = 12
@@ -200,7 +202,7 @@ Partial Class Form2
         'player2
         '
         Me.player2.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.player2.Location = New System.Drawing.Point(408, 163)
+        Me.player2.Location = New System.Drawing.Point(408, 180)
         Me.player2.Name = "player2"
         Me.player2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.player2.Size = New System.Drawing.Size(184, 38)
@@ -211,7 +213,7 @@ Partial Class Form2
         'player1
         '
         Me.player1.Font = New System.Drawing.Font("Segoe UI Semibold", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.player1.Location = New System.Drawing.Point(408, 58)
+        Me.player1.Location = New System.Drawing.Point(408, 75)
         Me.player1.Name = "player1"
         Me.player1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.player1.Size = New System.Drawing.Size(184, 42)
@@ -222,7 +224,7 @@ Partial Class Form2
         'score_o
         '
         Me.score_o.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.score_o.Location = New System.Drawing.Point(540, 203)
+        Me.score_o.Location = New System.Drawing.Point(540, 220)
         Me.score_o.Name = "score_o"
         Me.score_o.Size = New System.Drawing.Size(52, 36)
         Me.score_o.TabIndex = 15
@@ -234,7 +236,7 @@ Partial Class Form2
         Me.restart.FlatAppearance.BorderSize = 2
         Me.restart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.restart.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.restart.Location = New System.Drawing.Point(420, 299)
+        Me.restart.Location = New System.Drawing.Point(420, 293)
         Me.restart.Name = "restart"
         Me.restart.Size = New System.Drawing.Size(144, 56)
         Me.restart.TabIndex = 16
@@ -244,7 +246,7 @@ Partial Class Form2
         'GroupBox2
         '
         Me.GroupBox2.Font = New System.Drawing.Font("Open Sans", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(399, 38)
+        Me.GroupBox2.Location = New System.Drawing.Point(399, 55)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(198, 100)
         Me.GroupBox2.TabIndex = 17
@@ -254,12 +256,24 @@ Partial Class Form2
         'GroupBox3
         '
         Me.GroupBox3.Font = New System.Drawing.Font("Open Sans", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(399, 142)
+        Me.GroupBox3.Location = New System.Drawing.Point(399, 159)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(198, 100)
         Me.GroupBox3.TabIndex = 18
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Makes O mark"
+        '
+        'Button10
+        '
+        Me.Button10.BackColor = System.Drawing.Color.Transparent
+        Me.Button10.FlatAppearance.BorderSize = 0
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
+        Me.Button10.Location = New System.Drawing.Point(564, 17)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(38, 31)
+        Me.Button10.TabIndex = 19
+        Me.Button10.UseVisualStyleBackColor = False
         '
         'Form2
         '
@@ -267,6 +281,7 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(622, 395)
+        Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.restart)
         Me.Controls.Add(Me.score_o)
         Me.Controls.Add(Me.player1)
@@ -302,4 +317,5 @@ Partial Class Form2
     Friend WithEvents restart As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Button10 As Button
 End Class
