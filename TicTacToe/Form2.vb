@@ -1,7 +1,7 @@
 ﻿Public Class Form2
 
     Dim mark_counter As Integer
-    Dim count As Integer = 0 'count is a counter for button click
+    Dim count As Integer = 1 'count is a counter for button click
     Dim flag As Integer = 2 '-1 means draw, 1 means X and 0 means O
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -125,6 +125,15 @@
             Reset_field()
         ElseIf flag = -1 Then
             MsgBox("Draw!")
+            Reset_field()
+        End If
+    End Function
+
+    Private Function Update_score(ByVal flag As Integer)
+        If flag = 1 Then
+            score_x.Text = score_x.Text + 1
+        ElseIf flag = 0 Then
+            score_o.Text = score_o.Text + 1
         End If
     End Function
 
@@ -142,7 +151,7 @@
         GroupBox1.Text = "Make a mark!"
         mark_counter = 0
         flag = 2
-        count = 0
+        count = 1
 
         Button1.BackColor = Color.Transparent
         Button2.BackColor = Color.Transparent
@@ -153,14 +162,6 @@
         Button7.BackColor = Color.Transparent
         Button8.BackColor = Color.Transparent
         Button9.BackColor = Color.Transparent
-    End Function
-
-    Private Function Update_score(ByVal flag As Integer)
-        If flag = 1 Then
-            score_x.Text = score_x.Text + 1
-        ElseIf flag = 0 Then
-            score_o.Text = score_o.Text + 1
-        End If
     End Function
 
     Private Sub restart_Click(sender As Object, e As EventArgs) Handles restart.Click
