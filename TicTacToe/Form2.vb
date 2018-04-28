@@ -73,54 +73,54 @@
             Button9.BackColor = Color.LightCoral
         ElseIf Button1.Text = "O" And Button5.Text = "O" And Button9.Text = "O" Then
             flag = 0
-            Button1.BackColor = Color.Lavender
-            Button5.BackColor = Color.Lavender
-            Button9.BackColor = Color.Lavender
+            Button1.BackColor = Color.MediumAquamarine
+            Button5.BackColor = Color.MediumAquamarine
+            Button9.BackColor = Color.MediumAquamarine
         ElseIf Button3.Text = "O" And Button5.Text = "O" And Button7.Text = "O" Then
             flag = 0
-            Button3.BackColor = Color.Lavender
-            Button5.BackColor = Color.Lavender
-            Button7.BackColor = Color.Lavender
+            Button3.BackColor = Color.MediumAquamarine
+            Button5.BackColor = Color.MediumAquamarine
+            Button7.BackColor = Color.MediumAquamarine
         ElseIf Button1.Text = "O" And Button2.Text = "O" And Button3.Text = "O" Then
             flag = 0
-            Button1.BackColor = Color.Lavender
-            Button2.BackColor = Color.Lavender
-            Button3.BackColor = Color.Lavender
+            Button1.BackColor = Color.MediumAquamarine
+            Button2.BackColor = Color.MediumAquamarine
+            Button3.BackColor = Color.MediumAquamarine
         ElseIf Button4.Text = "O" And Button5.Text = "O" And Button6.Text = "O" Then
             flag = 0
-            Button4.BackColor = Color.Lavender
-            Button5.BackColor = Color.Lavender
-            Button6.BackColor = Color.Lavender
+            Button4.BackColor = Color.MediumAquamarine
+            Button5.BackColor = Color.MediumAquamarine
+            Button6.BackColor = Color.MediumAquamarine
         ElseIf Button7.Text = "O" And Button8.Text = "O" And Button9.Text = "O" Then
             flag = 0
-            Button7.BackColor = Color.Lavender
-            Button8.BackColor = Color.Lavender
-            Button9.BackColor = Color.Lavender
+            Button7.BackColor = Color.MediumAquamarine
+            Button8.BackColor = Color.MediumAquamarine
+            Button9.BackColor = Color.MediumAquamarine
         ElseIf Button1.Text = "O" And Button4.Text = "O" And Button7.Text = "O" Then
             flag = 0
-            Button1.BackColor = Color.Lavender
-            Button4.BackColor = Color.Lavender
-            Button7.BackColor = Color.Lavender
+            Button1.BackColor = Color.MediumAquamarine
+            Button4.BackColor = Color.MediumAquamarine
+            Button7.BackColor = Color.MediumAquamarine
         ElseIf Button2.Text = "O" And Button5.Text = "O" And Button8.Text = "O" Then
             flag = 0
-            Button2.BackColor = Color.Lavender
-            Button5.BackColor = Color.Lavender
-            Button8.BackColor = Color.Lavender
+            Button2.BackColor = Color.MediumAquamarine
+            Button5.BackColor = Color.MediumAquamarine
+            Button8.BackColor = Color.MediumAquamarine
         ElseIf Button3.Text = "O" And Button6.Text = "O" And Button9.Text = "O" Then
             flag = 0
-            Button3.BackColor = Color.Lavender
-            Button6.BackColor = Color.Lavender
-            Button9.BackColor = Color.Lavender
+            Button3.BackColor = Color.MediumAquamarine
+            Button6.BackColor = Color.MediumAquamarine
+            Button9.BackColor = Color.MediumAquamarine
         ElseIf count = 9 Then
             flag = -1
         End If
 
         If flag = 1 Then
-            MsgBox(player1.Text + " won!")
+            MsgBox("㊗️ " + player1.Text + " won!")
             Update_score(flag)
             Reset_field()
         ElseIf flag = 0 Then
-            MsgBox(player2.Text + " won!")
+            MsgBox("㊗️ " + player2.Text + " won!")
             Update_score(flag)
             Reset_field()
         ElseIf flag = -1 Then
@@ -131,9 +131,9 @@
 
     Private Function Update_score(ByVal flag As Integer)
         If flag = 1 Then
-            score_x.Text = score_x.Text + 1
+            score_x.Text = score_x.Text + 5
         ElseIf flag = 0 Then
-            score_o.Text = score_o.Text + 1
+            score_o.Text = score_o.Text + 5
         End If
     End Function
 
@@ -169,6 +169,18 @@
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        MsgBox("About Me")
+        MessageBox.Show(
+    "Developed by Mayukh Datta
+        (@thecoducer)
+        - Version 1.0, 2018
+        - www.thecoducer.com",
+    "About WowCalci",
+    MessageBoxButtons.OK,
+    MessageBoxIcon.Information,
+    MessageBoxDefaultButton.Button2,
+    0, '0 is default otherwise use MessageBoxOptions Enum
+    "https://thecoducer.github.io/",
+    "contact")
     End Sub
+
 End Class

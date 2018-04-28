@@ -32,28 +32,28 @@ Partial Class Form1
         Me.player1_name.BackColor = System.Drawing.SystemColors.Control
         Me.player1_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.player1_name.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.player1_name.Location = New System.Drawing.Point(28, 36)
+        Me.player1_name.Location = New System.Drawing.Point(42, 40)
         Me.player1_name.Name = "player1_name"
         Me.player1_name.Size = New System.Drawing.Size(386, 43)
         Me.player1_name.TabIndex = 0
-        Me.player1_name.Text = "player x's name"
+        Me.player1_name.Text = "enter player x's name"
         '
         'player2_name
         '
         Me.player2_name.BackColor = System.Drawing.SystemColors.Control
         Me.player2_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.player2_name.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.player2_name.Location = New System.Drawing.Point(28, 91)
+        Me.player2_name.Location = New System.Drawing.Point(42, 95)
         Me.player2_name.Name = "player2_name"
         Me.player2_name.Size = New System.Drawing.Size(386, 43)
         Me.player2_name.TabIndex = 1
-        Me.player2_name.Text = "player o's name"
+        Me.player2_name.Text = "enter player o's name"
         '
         'btn_next
         '
         Me.btn_next.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_next.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_next.Location = New System.Drawing.Point(163, 160)
+        Me.btn_next.Location = New System.Drawing.Point(177, 164)
         Me.btn_next.Name = "btn_next"
         Me.btn_next.Size = New System.Drawing.Size(116, 42)
         Me.btn_next.TabIndex = 2
@@ -64,7 +64,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(442, 226)
+        Me.ClientSize = New System.Drawing.Size(470, 226)
         Me.Controls.Add(Me.btn_next)
         Me.Controls.Add(Me.player2_name)
         Me.Controls.Add(Me.player1_name)

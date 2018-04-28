@@ -233,7 +233,6 @@ Partial Class Form2
         '
         'restart
         '
-        Me.restart.FlatAppearance.BorderSize = 2
         Me.restart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.restart.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.restart.Location = New System.Drawing.Point(420, 293)
@@ -265,14 +264,18 @@ Partial Class Form2
         '
         'Button10
         '
+        Me.Button10.AccessibleName = "Info"
         Me.Button10.BackColor = System.Drawing.Color.Transparent
         Me.Button10.FlatAppearance.BorderSize = 0
         Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button10.Font = New System.Drawing.Font("Open Sans", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
-        Me.Button10.Location = New System.Drawing.Point(564, 17)
+        Me.Button10.Location = New System.Drawing.Point(535, 18)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(38, 31)
+        Me.Button10.Size = New System.Drawing.Size(62, 31)
         Me.Button10.TabIndex = 19
+        Me.Button10.Text = " Info"
+        Me.Button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.Button10.UseVisualStyleBackColor = False
         '
         'Form2
@@ -280,7 +283,7 @@ Partial Class Form2
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(622, 395)
+        Me.ClientSize = New System.Drawing.Size(622, 393)
         Me.Controls.Add(Me.Button10)
         Me.Controls.Add(Me.restart)
         Me.Controls.Add(Me.score_o)
